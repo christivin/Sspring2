@@ -4,9 +4,11 @@
        xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+    <!--开启注解扫描
+      (1)到包里扫描类、方法、属性上面是否有注解-->
+    <context:component-scan base-package="cn.xmlanno"></context:component-scan>
 
-
-    <bean id="BookService" class="cn.xmlanno.BookService"></bean>
-    <bean id="BookDao" class="cn.xmlanno.BookDao"></bean>
-    <bean id="OrdersDao" class="cn.xmlanno.OrdersDao"></bean>
+    <bean id="bookService" class="cn.xmlanno.BookService"></bean>
+    <bean id="bookDao" class="cn.xmlanno.BookDao"></bean>
+    <bean id="ordersDao" class="cn.xmlanno.OrdersDao"></bean>
 </beans>

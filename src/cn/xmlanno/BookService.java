@@ -17,5 +17,7 @@ public class BookService {
     private OrdersDao ordersDao;
     public void add(){
         System.out.println("BookService.....");
+        bookDao.book();
+        ordersDao.buy();
     }
 }
