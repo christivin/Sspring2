@@ -10,6 +10,7 @@
     <bean id="book" class="cn.aop.Book"></bean>
     <bean id="mybook" class="cn.aop.MyBook"></bean>
 
+    
     <!--2.配置aop操作-->
     <aop:config>
         <!--1.配置切入点-->
