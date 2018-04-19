@@ -12,6 +12,7 @@ public class TestAOP {
     public void testUserService(){
         ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext3.xml");
         Book book = (Book) context.getBean("book");
+
         book.add();
 
     }
